@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <title>About Us - Dealerships</title>
+  <!-- Link Bootstrap and custom style sheets -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -12,10 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/about">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
@@ -25,44 +31,45 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+  <div class="card" style="width: 80%; margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header" style="text-align: center; padding: 20px;">
+      <h1>About Us</h1>
+      <p style="font-size: 18px; color: #333; max-width: 800px; margin: auto;">
+        Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices. Our mission is to make vehicle purchasing and ownership reliable, transparent, and enjoyable.
+      </p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin: auto; justify-content: space-around; width: 95%; margin-bottom: 30px;">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+        <img class="card-img-top" src="/static/person.png" alt="John Doe" style="padding: 15px; border-radius: 50%;">
+        <div class="card-body" style="text-align: center;">
+          <p class="title">John Doe</p>
+          <p><strong>Founder & CEO</strong></p>
+          <p class="card-text">With over 20 years of experience in the automotive industry, John leads our dealership network with passion and integrity, making customer satisfaction our highest priority.</p>
+          <p style="color: rgb(97, 64, 128); font-weight: bold;">john.doe@bestcars.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+        <img class="card-img-top" src="/static/person.png" alt="Sarah Connor" style="padding: 15px; border-radius: 50%;">
+        <div class="card-body" style="text-align: center;">
+          <p class="title">Sarah Connor</p>
+          <p><strong>Head of Sales & Financing</strong></p>
+          <p class="card-text">Sarah specializes in customer financing and pre-owned vehicle valuations, helping hundreds of families find the perfect car for their budget and lifestyle.</p>
+          <p style="color: rgb(97, 64, 128); font-weight: bold;">sarah.connor@bestcars.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <img class="card-img-top" src="/static/person.png" alt="Michael Brown" style="padding: 15px; border-radius: 50%;">
+        <div class="card-body" style="text-align: center;">
+          <p class="title">Michael Brown</p>
+          <p><strong>Senior Service Manager</strong></p>
+          <p class="card-text">Michael oversees our certified multi-point vehicle inspections and maintenance operations, ensuring every vehicle delivered meets strict quality standards.</p>
+          <p style="color: rgb(97, 64, 128); font-weight: bold;">michael.brown@bestcars.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
-
+</body>
 </html>
